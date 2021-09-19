@@ -47,12 +47,12 @@
     {
       "title": "Linkedin",
       "link": "https://linkedin.com/in/diegoma",
-      "icon": "/icon/linkedin.svg"
+      "icon": "/icon/$theme/linkedin.svg"
     },
     {
       "title": "GitHub",
       "link": "https://github.com/diegoma",
-      "icon": "/icon/github.svg"
+      "icon": "/icon/$theme/github.svg"
     }
   ],
   "habilidades": [
@@ -200,13 +200,17 @@
       "colors": {
         "primary": "#000000",
         "secondary": "#FFFFFF"
-      }
+      },
+      "imgPerfilFilter": "none",
+      "name": "bright"
     },
     "dark": {
       "colors": {
         "primary": "#8B949E",
         "secondary": "#0D1117"
-      }
+      },
+      "imgPerfilFilter": "grayscale(100%) brightness(0.7);",
+      "name": "dark"
     }
   }
 }
