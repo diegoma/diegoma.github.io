@@ -9,12 +9,10 @@ const HabilidadesWrapper = styled.ul`
 
   > li {
     float: left;
+    margin-right: 6px;
+    margin-bottom: 5px;
   }
-
-  > li + li {
-    margin-left: 6px;
-  }
-
+  
   span {
     display: inline-block;
     font-size: 12px;

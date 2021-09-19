@@ -9,6 +9,11 @@ const CaixaConteudo = styled.div`
   color: ${({ blockType, theme }) => blockType == 0 ? theme.colors.secondary : theme.colors.primary};
   background-color: ${({ blockType, theme }) => blockType == 0 ? theme.colors.primary : theme.colors.secondary};
   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.4);
+
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+  }
 `;
 
 export default CaixaConteudo;

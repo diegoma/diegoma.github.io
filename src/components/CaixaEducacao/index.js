@@ -30,7 +30,7 @@ const CaixaEducacao = function (props) {
         <span style={{ float: "right" }}>{props.curso.ano}</span>
       </header>
       <h4>{props.curso.titulo}</h4>
-      <p>{props.curso.conteudo}</p>
+      <p style={{ whiteSpace: "pre-wrap" }}>{props.curso.conteudo}</p>
     </CaixaEducacaoWrapper>
   );
 }

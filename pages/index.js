@@ -1,4 +1,3 @@
-import styled from 'styled-components'
 import { Grid, Cell } from "styled-css-grid";
 import db from '../db.json';
 import SiteBackground from '../src/components/SiteBackground';

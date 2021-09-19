@@ -1,10 +1,14 @@
+import { useState } from "react";
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import Head from 'next/head';
 import db from '../db.json';
+// import { BtnTema } from "../src/components/UI";
+// import SwitcherTheme from "../src/components/SwitcherTheme";
 
 const GlobalStyle = createGlobalStyle`
   html {
     overflow-x: hidden;
+    scroll-behavior: smooth;
   }
   
   body {
@@ -62,9 +66,13 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
-const theme = db.theme;
-
 export default function App({ Component, pageProps }) {
+  const [theme, setTheme] = useState(true);
+
+  const toggleTema = () => {
+    setTheme((theme) => !theme);
+  };
+  
   return (
     <>
       <Head>
@@ -72,8 +80,11 @@ export default function App({ Component, pageProps }) {
           {db.siteTitle}
         </title>
       </Head>
-      <ThemeProvider theme={theme}>
+      <ThemeProvider theme={theme ? db.theme.bright : db.theme.dark}>
         <GlobalStyle />
+        {/* <BtnTema onClick={toggleTema}>
+          <SwitcherTheme theme={theme} />
+        </BtnTema> */}
         <Component {...pageProps} />
       </ThemeProvider>
     </>

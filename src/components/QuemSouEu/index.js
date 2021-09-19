@@ -51,12 +51,12 @@ const QuemSouEu = function(props) {
   const contentStyle = {  
     marginBottom: "15px",
     fontFamily: "Arial, Helvetica, sans-serif",
-    fontSize: "18px",
+    fontSize: "16px",
     textAlign: "justify"
   };
 
   return (
-    <Grid style={{ marginTop: "60px", marginBottom: "60px" }} columns={8}>
+    <Grid style={{ marginTop: "60px", marginBottom: "60px" }} columns={8} columns="repeat(auto-fit, minmax(50px, 1fr))">
       <Cell width={5} middle>       
           <h1 style={titleStyle}>{props.quemSouEu.title}</h1>
           {

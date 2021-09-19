@@ -36,24 +36,38 @@ const Carreira = function (props) {
             {
               props.carreira.empregos.map((result, index) => (
                 <li key={`${index}`}>
-                  <div style={{ overflow: "hidden", borderBottom: "1px solid #000", marginBottom: "15px", padding: "5px 0" }}>
+                  <header style={{ overflow: "hidden", borderBottom: "1px solid #000", marginBottom: "15px", padding: "5px 0" }}>
                     <h4 style={{ float: "left" }}>
                       {result.titulo}
                     </h4>
                     <span style={{ float: "right" }}>
                       {result.periodo}
                     </span>
-                  </div>
+                  </header>
+
                   <h5>
                     {result.cargo}
                   </h5>                  
+                  
                   {
                     result.conteudo.map((result, index) => (
-                      <p key={`${index}`}>
+                      <p style={{ whiteSpace: " pre-wrap" }} key={`${index}`}>
                         {result}
                       </p>
                     ))
                   }
+
+                  <h6 style={{ marginTop: "10px", marginBottom: "10px", fontWeight: "bold"}}>Atividades</h6>
+                  
+                  <ul style={{ listStyle: "inside" }}>
+                    {
+                      result.atividades.map((result, index) => (
+                        <li style={{ whiteSpace: " pre-wrap", marginBottom: "5px" }} key={`${index}`}>
+                          {result}
+                        </li>
+                      ))
+                    }
+                  </ul>
                 </li>
               ))
             }

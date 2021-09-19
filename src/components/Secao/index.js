@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Secao = styled.div`
   margin-top: 40px;
 
-  header {
+  > header {
     text-align: ${({ alignTitle }) => alignTitle};
   }
 
