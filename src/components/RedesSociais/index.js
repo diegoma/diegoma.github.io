@@ -20,6 +20,16 @@ const RedesSociaisWrapper = styled.ul`
   }
 `;
 
+const IconeRedeSocial = styled.img.attrs((props) => { 
+  return (
+    {
+      src: props.iconPath.replace('$theme', props.theme.name),
+    }
+  )
+})`
+
+`;
+
 const RedesSociais = (props) =>
 (
   <RedesSociaisWrapper>
@@ -27,7 +37,7 @@ const RedesSociais = (props) =>
         props.redesSociais.map((result, index) => (
           <li key={`${index}`}>
             <a href={`${result.link}`} target="_blank">
-              <img src={`${result.icon}`} alt={`${result.title}`} />
+              <IconeRedeSocial iconPath={`${result.icon}`} alt={`${result.title}`} />
             </a>
           </li>
         ))

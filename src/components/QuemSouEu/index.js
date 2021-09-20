@@ -10,6 +10,12 @@ const ImagemPerfil = styled.img`
   border: 1px solid ${({ theme }) => theme.colors.primary};
   position: relative;
   z-index: 10;
+  filter: ${({ theme }) => theme.imgPerfilFilter };
+  transition: 0.3s;
+
+  &:hover { 
+    filter: none;
+  }
 `;
 
 const ImagemPerfilLines = styled.span`

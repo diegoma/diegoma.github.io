@@ -16,7 +16,7 @@ const FooterWrapper = styled.footer`
 `;
 
 const SVGWrapper = styled.svg`
-    
+    fill: ${({ theme }) => theme.colors.primary};
 `;
 
 const Footer = () => {

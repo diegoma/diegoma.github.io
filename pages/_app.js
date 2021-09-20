@@ -2,8 +2,8 @@ import { useState } from "react";
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import Head from 'next/head';
 import db from '../db.json';
-// import { BtnTema } from "../src/components/UI";
-// import SwitcherTheme from "../src/components/SwitcherTheme";
+import { BtnTema } from "../src/components/UI";
+import SwitcherTheme from "../src/components/SwitcherTheme";
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -80,11 +80,11 @@ export default function App({ Component, pageProps }) {
           {db.siteTitle}
         </title>
       </Head>
-      <ThemeProvider theme={theme ? db.theme.bright : db.theme.dark}>
+      <ThemeProvider theme={theme ? db.theme.dark : db.theme.bright }>
         <GlobalStyle />
-        {/* <BtnTema onClick={toggleTema}>
+        <BtnTema onClick={toggleTema}>
           <SwitcherTheme theme={theme} />
-        </BtnTema> */}
+        </BtnTema>
         <Component {...pageProps} />
       </ThemeProvider>
     </>

@@ -22,6 +22,13 @@ const CarreiraWrapper = styled.ul`
   }
 `;
 
+const CarreiraHeader = styled.header`
+  overflow: hidden;
+  border-bottom: 1px solid ${({ theme }) => theme.colors.primary};
+  margin-bottom: 15px;
+  padding: 5px 0
+`;
+
 const Carreira = function (props) {
   return (
     <Secao alignTitle={"left"} style={{ marginBottom: "40px" }}>
@@ -36,15 +43,14 @@ const Carreira = function (props) {
             {
               props.carreira.empregos.map((result, index) => (
                 <li key={`${index}`}>
-                  <header style={{ overflow: "hidden", borderBottom: "1px solid #000", marginBottom: "15px", padding: "5px 0" }}>
+                  <CarreiraHeader>
                     <h4 style={{ float: "left" }}>
                       {result.titulo}
                     </h4>
                     <span style={{ float: "right" }}>
                       {result.periodo}
                     </span>
-                  </header>
-
+                  </CarreiraHeader>
                   <h5>
                     {result.cargo}
                   </h5>                  

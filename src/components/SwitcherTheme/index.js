@@ -1,8 +1,11 @@
-import ThemeOn from "/icon/assets/images/themeOn.svg";
-import ThemeOff from "/icon/themeOff.svg";
-import { Icone } from "../UI";
+import ThemeOn from "../../assets/svg/themeOn.svg";
+import ThemeOff from "../../assets/svg/themeOff.svg";
 
-const bright = <Icone src={ThemeOn} alt="Bright Theme" />;
-const dark = <Icone src={ThemeOff} alt="Dark Theme" />;
+const iconStyle = {
+    "height": "25px",
+    "width": "25px"
+};
 
-export default ({ theme }) => (theme ? dark : bright);
+const SwitcherTheme = ({ theme }) => (theme ? <ThemeOn style={iconStyle} /> : <ThemeOff style={iconStyle} fill="#8B949E" />);
+
+export default SwitcherTheme;
