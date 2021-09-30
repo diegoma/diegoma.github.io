@@ -1,6 +1,7 @@
 import styled from "styled-components";
-import { Grid, Cell } from "styled-css-grid";
 import RedesSociais from "../RedesSociais";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 const ImagemPerfil = styled.img`
   display: block;
@@ -62,8 +63,8 @@ const QuemSouEu = function(props) {
   };
 
   return (
-    <Grid style={{ marginTop: "60px", marginBottom: "60px" }} columns={8} columns="repeat(auto-fit, minmax(50px, 1fr))">
-      <Cell width={5} middle>       
+    <Row style={{ marginTop: "60px", marginBottom: "60px" }}>
+      <Col  md={{ span: 5, offset: 2 }}>       
           <h1 style={titleStyle}>{props.quemSouEu.title}</h1>
           {
             props.quemSouEu.content.map((result, index) => (
@@ -73,11 +74,11 @@ const QuemSouEu = function(props) {
             ))
           }
           <RedesSociais redesSociais={props.redesSociais}></RedesSociais>
-      </Cell> 
-      <Cell width={3}>
+      </Col> 
+      <Col md={{ span: 3 }}>
         <ImagemPerfilWrapper quemSouEuImg={props.quemSouEu.image}></ImagemPerfilWrapper>
-      </Cell>
-    </Grid>
+      </Col>
+    </Row>
   );
 }
 

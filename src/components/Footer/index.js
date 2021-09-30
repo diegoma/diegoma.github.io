@@ -1,11 +1,10 @@
 import styled from 'styled-components';
-import { Cell } from "styled-css-grid";
+import Col from 'react-bootstrap/Col';
 
 const FooterWrapper = styled.footer`
     box-sizing: border-box;
-    margin-top: 30px;
     margin-bottom: 30px;
-    padding: 0 15px;
+    padding: 30px 15px 0 15px;
     width: 100%;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -21,7 +20,7 @@ const SVGWrapper = styled.svg`
 
 const Footer = () => {
   return (
-    <Cell width={12}>
+    <Col>
       <FooterWrapper>
         <p>
           A wizard is never late, nor is he early, he arrives precisely when he means to
@@ -35,7 +34,7 @@ const Footer = () => {
           <path d="m84.46875 434.34375c17.773438 9.492188 68.519531 31.652344 153.601562 31.652344 85.082032 0 135.824219-22.160156 153.699219-31.695313l-19.691406-60.894531c0-.125-.101563-.238281-.121094-.375l-5.777343-17.871094c-35.285157 11.539063-72.054688 17.90625-109.164063 18.90625l2.191406 12.5625c.597657 3.421875-.796875 6.890625-3.597656 8.945313-2.800781 2.054687-6.527344 2.34375-9.613281.746093l-35.355469-18.285156-35.355469 18.285156c-3.085937 1.597657-6.808594 1.308594-9.613281-.746093-2.800781-2.054688-4.195313-5.523438-3.597656-8.945313l3.144531-17.984375c-18.726562-2.992187-37.175781-7.535156-55.148438-13.585937zm0 0" />
         </SVGWrapper>
       </FooterWrapper>
-    </Cell>
+    </Col>
   );
 };
 

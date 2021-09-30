@@ -1,7 +1,7 @@
-import styled from 'styled-components';
-import { Grid, Cell } from "styled-css-grid";
 import Habilidades from "../Habilidades";
 import Secao from "../Secao";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 const Experiencia = function (props) {
   return (
@@ -11,8 +11,8 @@ const Experiencia = function (props) {
           {props.experiencia.title}
         </h3>
       </header>
-      <Grid columns={10}>
-        <Cell width={9}>
+      <Row>
+        <Col md={{ span: 8, offset: 2 }}>
           {
             props.experiencia.content.map((result, index) => (
               <p key={`${index}`}>
@@ -21,8 +21,8 @@ const Experiencia = function (props) {
             ))
           }
           <Habilidades habilidades={props.habilidades}></Habilidades>
-        </Cell>
-      </Grid>
+        </Col>
+      </Row>
     </Secao>
   )
 }

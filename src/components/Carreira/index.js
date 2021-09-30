@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import { Grid, Cell } from "styled-css-grid";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import Secao from "../Secao";
 
 const CarreiraWrapper = styled.ul`
@@ -26,7 +27,7 @@ const CarreiraHeader = styled.header`
   overflow: hidden;
   border-bottom: 1px solid ${({ theme }) => theme.colors.primary};
   margin-bottom: 15px;
-  padding: 5px 0
+  padding: 5px 0;
 `;
 
 const Carreira = function (props) {
@@ -34,11 +35,11 @@ const Carreira = function (props) {
     <Secao alignTitle={"left"} style={{ marginBottom: "40px" }}>
       <header>
         <h3>
-          {props.carreira.title}
+          {props.carreira.title}''
         </h3>
       </header>
-      <Grid columns={10}>
-        <Cell width={9}>
+      <Row>
+        <Col md={{ span: 9, offset: 3 }}>
           <CarreiraWrapper>
             {
               props.carreira.empregos.map((result, index) => (
@@ -78,8 +79,8 @@ const Carreira = function (props) {
               ))
             }
           </CarreiraWrapper>
-        </Cell>
-      </Grid>
+        </Col>
+      </Row>
     </Secao>
   )
 }

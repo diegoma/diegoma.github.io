@@ -1,8 +1,9 @@
 import styled from 'styled-components';
-import { Grid, Cell } from "styled-css-grid";
 import CaixaEducacao from "../CaixaEducacao";
 import CaixaConteudo from "../CaixaConteudo"
 import Secao from "../Secao";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 const EducacaoWrapper = styled.ul`
   font-family: Arial, Helvetica, sans-serif;
@@ -27,8 +28,8 @@ const Educacao = function (props) {
           {props.educacao.title}
         </h3>
       </header>
-      <Grid columns={10} columns="repeat(auto-fit, minmax(120px, 1fr))">
-        <Cell width={10}>
+      <Row>
+        <Col md={{ span: 8, offset: 2 }}>
           <EducacaoWrapper>
             {
               props.educacao.cursos.map(function (result, index)
@@ -77,8 +78,8 @@ const Educacao = function (props) {
             </li>
 
           </EducacaoWrapper>
-        </Cell>
-      </Grid>
+        </Col>
+      </Row>
     </Secao>
   )
 }
