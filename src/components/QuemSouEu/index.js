@@ -1,6 +1,8 @@
 import styled from "styled-components";
-import { Grid, Cell } from "styled-css-grid";
 import RedesSociais from "../RedesSociais";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container'
 
 const ImagemPerfil = styled.img`
   display: block;
@@ -27,23 +29,24 @@ const ImagemPerfilLines = styled.span`
   border: 1px solid ${({ theme }) => theme.colors.primary};
 `;
 
-const ImagemPerfilWrapper = function(props) {
-  const imageWrapper = {
-    height: "250px",
-    width: "250px",
-    textAlign: "right",
-    position: "relative",
-    margin: "20px auto 20px auto"
-  };
+const ImageWrapper = styled.div`
+  height: 250px;
+  width: 250px;
+  text-align: right;
+  position: relative;
+  margin: 20px auto 20px auto;
+`;
 
+
+const ImagemPerfilWrapper = function(props) {
   return (
-    <div style={imageWrapper}>
+    <ImageWrapper>
       <ImagemPerfilLines style={{ left: "12px", top: "12px" }}></ImagemPerfilLines>
       <ImagemPerfilLines style={{ left: "-19px", top: "-7px" }}></ImagemPerfilLines>
       <ImagemPerfilLines style={{ left: "12px", top: "-7px" }}></ImagemPerfilLines>
       <ImagemPerfilLines style={{ left: "-8px", top: "0px" }}></ImagemPerfilLines>
       <ImagemPerfil src={props.quemSouEuImg.src} alt={props.quemSouEuImg.alt}></ImagemPerfil>
-    </div> 
+    </ImageWrapper> 
   );
 }
 
@@ -62,22 +65,24 @@ const QuemSouEu = function(props) {
   };
 
   return (
-    <Grid style={{ marginTop: "60px", marginBottom: "60px" }} columns={8} columns="repeat(auto-fit, minmax(50px, 1fr))">
-      <Cell width={5} middle>       
-          <h1 style={titleStyle}>{props.quemSouEu.title}</h1>
-          {
-            props.quemSouEu.content.map((result, index) => (
-              <p style={contentStyle} key={`${index}`}>
-                {result}
-              </p>
-            ))
-          }
-          <RedesSociais redesSociais={props.redesSociais}></RedesSociais>
-      </Cell> 
-      <Cell width={3}>
-        <ImagemPerfilWrapper quemSouEuImg={props.quemSouEu.image}></ImagemPerfilWrapper>
-      </Cell>
-    </Grid>
+    <Container fluid style={{ marginTop: "60px", marginBottom: "60px" }}>
+      <Row>
+        <Col sm={{ span: 10, offset: 1 }}  md={{ span: 12, offset: 0 }} xl={{ span: 5, offset: 2 }}>       
+            <h1 style={titleStyle}>{props.quemSouEu.title}</h1>
+            {
+              props.quemSouEu.content.map((result, index) => (
+                <p style={contentStyle} key={`${index}`}>
+                  {result}
+                </p>
+              ))
+            }
+            <RedesSociais redesSociais={props.redesSociais}></RedesSociais>
+        </Col> 
+        <Col sm={{ span: 10, offset: 1 }} md={{ span: 12, offset: 0 }} xl={{ span: 3 }}>
+          <ImagemPerfilWrapper quemSouEuImg={props.quemSouEu.image}></ImagemPerfilWrapper>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 

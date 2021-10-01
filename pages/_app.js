@@ -4,6 +4,7 @@ import Head from 'next/head';
 import db from '../db.json';
 import { BtnTema } from "../src/components/UI";
 import SwitcherTheme from "../src/components/SwitcherTheme";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const GlobalStyle = createGlobalStyle`
   html {

@@ -1,4 +1,3 @@
-import { Grid, Cell } from "styled-css-grid";
 import db from '../db.json';
 import SiteBackground from '../src/components/SiteBackground';
 import GitHubCorner from '../src/components/GitHubCorner';
@@ -9,6 +8,9 @@ import Educacao from '../src/components/Educacao';
 import Carreira from '../src/components/Carreira';
 import Footer from '../src/components/Footer';
 import Separador from '../src/components/Separador';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container'
 
 export default function Home() {
   return (
@@ -16,42 +18,53 @@ export default function Home() {
       <span id="quemSouEu"></span>
       <GitHubCorner projectUrl="https://github.com/diegoma/diegoma.github.io" />
 
-      <Grid style={{ width: '100%' }}>
-        <Cell left={2} width={10}>
-          <Menu menuItems={db.menuItems}></Menu>
-        </Cell>
+      <Container fluid>
+      {/* left={2} width={10} */}
+        <Row>
+          <Col sm={{ span: 8, offset: 1 }}>
+            <Menu menuItems={db.menuItems}></Menu>
+          </Col>
+        </Row>
 
-        <Cell left={3} width={8}>        
-          <QuemSouEu quemSouEu={db.quemSouEu} redesSociais={db.redesSociais}></QuemSouEu>
-        </Cell>
+        <Row>
+          <Col sm="12">
+            <QuemSouEu quemSouEu={db.quemSouEu} redesSociais={db.redesSociais}></QuemSouEu>
+          </Col>
+        </Row>
 
-        <Cell width={12}>
+        <Row>
           <Separador></Separador>
-        </Cell>
+        </Row>
 
-        <Cell left={2} width={10}>
+        <Row>
           <span id="experiencia"></span>
-          <Experiencia experiencia={db.experiencia} habilidades={db.habilidades}></Experiencia>
-        </Cell>
+          <Col sm={{ span: 10, offset: 1 }}>
+            <Experiencia experiencia={db.experiencia} habilidades={db.habilidades}></Experiencia>
+          </Col>
+        </Row>
 
-        <Cell left={2} width={10}>
+        <Row>
           <span id="educacao"></span>
-          <Educacao educacao={db.educacao}></Educacao>
-        </Cell>
+          <Col sm={{ span: 10, offset: 1 }} md={{ span: 10, offset: 1 }}>
+            <Educacao educacao={db.educacao}></Educacao>
+          </Col>
+        </Row>
 
-        <Cell left={2} width={10}>
+        <Row>
           <span id="carreira"></span>
-          <Carreira carreira={db.carreira}></Carreira>
-        </Cell>
+          <Col sm={{ span: 10, offset: 1 }}>
+            <Carreira carreira={db.carreira}></Carreira>
+          </Col>
+        </Row>
 
-        <Cell width={12}>
+        <Row>
           <Separador></Separador>
-        </Cell>
+        </Row>
 
-        <Cell width={12}>
+        <Row>
           <Footer></Footer>
-        </Cell>
-      </Grid>
+        </Row>
+      </Container>
     </SiteBackground>
   )
 }
