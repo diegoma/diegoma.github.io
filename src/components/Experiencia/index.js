@@ -11,18 +11,14 @@ const Experiencia = function (props) {
           {props.experiencia.title}
         </h3>
       </header>
-      <Row>
-        <Col md={{ span: 8, offset: 2 }}>
-          {
-            props.experiencia.content.map((result, index) => (
-              <p key={`${index}`}>
-                {result}
-              </p>
-            ))
-          }
-          <Habilidades habilidades={props.habilidades}></Habilidades>
-        </Col>
-      </Row>
+      {
+        props.experiencia.content.map((result, index) => (
+          <p key={`${index}`}>
+            {result}
+          </p>
+        ))
+      }
+      <Habilidades habilidades={props.habilidades}></Habilidades>
     </Secao>
   )
 }

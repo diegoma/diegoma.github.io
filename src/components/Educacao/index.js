@@ -12,9 +12,13 @@ const EducacaoWrapper = styled.ul`
   text-decoration: none;
 
   > li {
-    float: left;
-    margin-bottom: 15px;
-    margin-right: 10px;
+    margin-bottom: 20px;
+
+    @media (min-width:992px) {
+      float: left;
+      margin-bottom: 15px;
+      margin-right: 10px;
+    }
   }
 `;
 
@@ -28,58 +32,53 @@ const Educacao = function (props) {
           {props.educacao.title}
         </h3>
       </header>
-      <Row>
-        <Col md={{ span: 8, offset: 2 }}>
-          <EducacaoWrapper>
-            {
-              props.educacao.cursos.map(function (result, index)
-                {                  
-                  return ( 
-                    <li key={`${++count}`}>
-                      <CaixaEducacao blockType={(count%2)} curso={result}>
-                      </CaixaEducacao>
-                    </li>
-                  )
-                } 
+      <EducacaoWrapper>
+        {
+          props.educacao.cursos.map(function (result, index)
+            {                  
+              return ( 
+                <li key={`${++count}`}>
+                  <CaixaEducacao blockType={(count%2)} curso={result}>
+                  </CaixaEducacao>
+                </li>
               )
-            }  
+            } 
+          )
+        }  
 
-            <li key={`${++count}`}>
-              <CaixaConteudo blockType={`${(count%2)}`}>
-                <div>
-                  <header style={{ overflow: "hidden", marginBottom: "20px" }}>
-                    <h4 style={{ fontSize: "18px" }}> 
-                      {props.educacao.idiomas.titulo}
-                    </h4>
-                  </header>
-                  <ul style={{ overflow: "hidden" }}>
-                    {
-                      props.educacao.idiomas.linguas.map((result, index) => (
-                        <li key={`${index}`} style={{ float: "left", width: "50%" }}>
-                          <h6>{result.titulo}</h6>
-                          <p>{result.nivel}</p>
-                        </li>
-                      ))
-                    }
-                  </ul>
-                </div>
+        <li key={`${++count}`}>
+          <CaixaConteudo blockType={`${(count%2)}`}>
+            <div>
+              <header style={{ overflow: "hidden", marginBottom: "20px" }}>
+                <h4 style={{ fontSize: "18px" }}> 
+                  {props.educacao.idiomas.titulo}
+                </h4>
+              </header>
+              <ul style={{ overflow: "hidden" }}>
+                {
+                  props.educacao.idiomas.linguas.map((result, index) => (
+                    <li key={`${index}`} style={{ float: "left", width: "50%" }}>
+                      <h6>{result.titulo}</h6>
+                      <p>{result.nivel}</p>
+                    </li>
+                  ))
+                }
+              </ul>
+            </div>
 
-                <div style={{ clear: "both", marginTop: "20px" }}>
-                  <header style={{ overflow: "hidden", marginBottom: "20px" }}>
-                    <h4 style={{ fontSize: "18px" }}>
-                      {props.educacao.cursosAvulsos.titulo}
-                    </h4>
-                  </header>
-                  <p>
-                    {props.educacao.cursosAvulsos.cursos}
-                  </p>
-                </div>
-              </CaixaConteudo>
-            </li>
-
-          </EducacaoWrapper>
-        </Col>
-      </Row>
+            <div style={{ clear: "both", marginTop: "20px" }}>
+              <header style={{ overflow: "hidden", marginBottom: "20px" }}>
+                <h4 style={{ fontSize: "18px" }}>
+                  {props.educacao.cursosAvulsos.titulo}
+                </h4>
+              </header>
+              <p>
+                {props.educacao.cursosAvulsos.cursos}
+              </p>
+            </div>
+          </CaixaConteudo>
+        </li>
+      </EducacaoWrapper>
     </Secao>
   )
 }

@@ -28,7 +28,9 @@ const MenuWrapper = styled.nav`
     @media (max-width: 640px)
     {
       ul {
-
+        > li {
+          margin-bottom: 7.5px;
+        }
       }
     }
 `;

@@ -35,12 +35,10 @@ const Carreira = function (props) {
     <Secao alignTitle={"left"} style={{ marginBottom: "40px" }}>
       <header>
         <h3>
-          {props.carreira.title}''
+          {props.carreira.title}
         </h3>
       </header>
-      <Row>
-        <Col md={{ span: 9, offset: 3 }}>
-          <CarreiraWrapper>
+      <CarreiraWrapper>
             {
               props.carreira.empregos.map((result, index) => (
                 <li key={`${index}`}>
@@ -79,8 +77,6 @@ const Carreira = function (props) {
               ))
             }
           </CarreiraWrapper>
-        </Col>
-      </Row>
     </Secao>
   )
 }

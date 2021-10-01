@@ -21,43 +21,46 @@ export default function Home() {
       <Container fluid>
       {/* left={2} width={10} */}
         <Row>
-          <Menu menuItems={db.menuItems}></Menu>
+          <Col sm={{ span: 8, offset: 1 }}>
+            <Menu menuItems={db.menuItems}></Menu>
+          </Col>
         </Row>
 
-        {/* left={3} width={8} */}
         <Row>
-          <QuemSouEu quemSouEu={db.quemSouEu} redesSociais={db.redesSociais}></QuemSouEu>
+          <Col sm="12">
+            <QuemSouEu quemSouEu={db.quemSouEu} redesSociais={db.redesSociais}></QuemSouEu>
+          </Col>
         </Row>
 
-        {/* width={12} */}
         <Row>
           <Separador></Separador>
         </Row>
 
-        {/* left={2} width={10} */}
         <Row>
           <span id="experiencia"></span>
-          <Experiencia experiencia={db.experiencia} habilidades={db.habilidades}></Experiencia>
+          <Col sm={{ span: 10, offset: 1 }}>
+            <Experiencia experiencia={db.experiencia} habilidades={db.habilidades}></Experiencia>
+          </Col>
         </Row>
 
-        {/* left={2} width={10} */}
         <Row>
           <span id="educacao"></span>
-          <Educacao educacao={db.educacao}></Educacao>
+          <Col sm={{ span: 10, offset: 1 }} md={{ span: 10, offset: 1 }}>
+            <Educacao educacao={db.educacao}></Educacao>
+          </Col>
         </Row>
 
-        {/* left={2} width={10} */}
         <Row>
           <span id="carreira"></span>
-          <Carreira carreira={db.carreira}></Carreira>
+          <Col sm={{ span: 10, offset: 1 }}>
+            <Carreira carreira={db.carreira}></Carreira>
+          </Col>
         </Row>
 
-        {/* width={12} */}
         <Row>
           <Separador></Separador>
         </Row>
 
-        {/* width={12} */}
         <Row>
           <Footer></Footer>
         </Row>
