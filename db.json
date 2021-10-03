@@ -1,0 +1,219 @@
+{
+  "siteTitle": "Diego Moreira Alves",
+  "menuItems": [
+    {
+      "name": "Quem sou eu?",
+      "link": "#quemSouEu"
+    },
+    {
+      "name": "Experiência",
+      "link": "#experiencia"
+    },
+    {
+      "name": "Educação",
+      "link": "#educacao"
+    },
+    {
+      "name": "Carreira",
+      "link": "#carreira"
+    }
+  ],
+  "quemSouEu": {
+    "title": "Quem sou eu?",
+    "image": {
+      "src": "/img/perfil.jpg",
+      "alt": "Imagem de Perfil"
+    },
+    "content": [
+      "Engenheiro de Software, curioso por natureza e apaixonado por tecnologia. Formado em Análise e Desenvolvimento de Sistemas pela Fatec-SP e Pós Graduado em Engenharia de Software pela Unicamp.",
+      "Com nove anos de experiência na área de desenvolvimento de software, já pude trabalhar com diversas linguagens de programação e frameworks, tanto na área de desenvolvimento Front-End como Back-End, sendo que nos últimos anos meu foco tem sido a plataforma .NET, trabalhando em uma stack que vai de Web Forms à Asp.Net Core 3.1.",
+      "Desde 2018 trabalho na Globalthings, ajudando a empresa a desenvolver produtos de sucesso."
+    ]
+  },
+  "experiencia": {
+    "title": "Experiência",
+    "alignTitle": "left",
+    "content": [
+      "Durante minha carreira tive a oportunidade de trabalhar com diversas linguagens de programação, assim como com diversos frameworks, tanto no mercado de trabalho como no ambiente acadêmico. Sigo aprendendo coisas novas a cada dia que passa e sempre me surpreendo com a velocidade com que a tecnologia avança. Sigo sempre buscando ler livros, artigos, casos de uso e eventualmente fazendo cursos online em plataformas como Alura, Coursera e Udemy.",
+      "Atualmente tenho voltado meus estudos para a plataforma .Net, e estou me atualizado em alguns assuntos que considero importantes para um desenvolvedor no dias atuais como: CI/CD, Docker, acompanhamento do mundo de desenvolvimento front-end, seja da evolução do css com Flexbox e Grids, ou Javascript com suas novas versões partindo do ES 6, além do conhecimento de algum dos  frameworks Javascript modernos como o ReactJs (inclusive esse site é feito em ReactJs, usando NextJs).",
+      "Comecei minha carreira trabalhando como programador front-end e por aproximadamente três anos eu trabalhei focado nessa área, tendo trabalhando com libs famosas na época (2012) como: jQuery, jQuery UI, nesse mesmo período a adoção de uso de smartphones por grande parte da população ficava cada vez maior, foi onde a ideia do desenvolvimento “mobile first” começou a ganhar muito espaço e libs como bootstrap se tornaram quase obrigatórias para qualquer desenvolvedor front-end, além disso, era necessário lidar com versões antigas de Internet Explorer (IE), lembro de ter que fazer sites que rodassem no IE 8.",
+      "Ser front-end neste período de transição de tecnologias demandava muito esforço e estudo, junto com todas essa mudanças chegaram outros grandes frameworks javascript, como Ember e AngularJs, com esse último eu tive a oportunidade de trabalhar durante algum tempo porém, meu foco, na época que trabalhei com ele, se deu mais por conta da criação de testes front-end usando selenium, com o framework de testes Protractor.",
+      "Com, aproximadamente, três anos e meio com experiência trabalhando com front-end, e eventualmente com back-end com Python/Django e Ruby on Rails, eu passei a trabalhar de forma mais dedicada com C# e Asp.Net em um grande projeto de portal de assinaturas, lá eu tive o desafio e o privilégio de trabalhar em uma equipe grande de desenvolvedores extremamente capacitados e pude aprender muito com eles, foi nesse projeto que pude ter meu primeiro contato com testes BDD e testes de unidade em grande escala, além de entity framework, hibernate, Web APIs e etc; esse projeto era grande e tinha algumas particularidades com as quais eu tive dificuldades a entender, o contexto de uma arquitetura back-end tem muito mais camadas que o contexto de uma arquitetura front-end, talvez hoje em dia, 2021, nem tanto.",
+      "Após deixar esse projeto eu trabalhei no desenvolvimento de um produto onde tinhamos o desafio de  \"minerar\" e consolidar dados de diversas empresas ao redor do mundo, e apresentarmos esses dados de forma: consolidada, intuitiva e rápida aos nossos cliente. Onde fosse possível realizar consultas especificas sobre empresas. A finalidade do produto era oferecer dados ricos sobre as empresas para que vendedores pudessem usar esses dados para fazer propostas de modo mais assertivas ao vender produtos e soluções. Meu principal desafio foi ser o único desenvolvedor e ter que aprender muitas coisas novas por conta própria, eu trabalhei: criando Web Crawlers para extrair informações de fontes públicas, criando processos de robôs para gerenciar os scripts de Web Crawlers, desenvolvimento do front-end, desenvolvimento back-end, publicação do projeto na núvem (Azure), criação de ambiente de homologação no azure e etc.",
+      "Em 2018 após já ter tido uma grande experiência passada, trabalhando tanto com Front-End como com Back-End, eu comecei a trabalhar na Globalthings, onde eu pude trabalhar em um produto já consolidado no mercado. Nesta empresa eu pude ter contato com diversas tecnologias, tanto novas como tecnologias que são consideradas legado, lá eu pude: aperfeiçoar meus conhecimentos em SQL, trabalhando pela primeira vez com PostgreSQL e C# no mesmo projeto; participar modernização e definição de uma nova arquitetura para sistema, passando agora a ter o foco no uso de Web APIs; trabalhar com Web Forms em um ambiente profissional, visto que antes eu só tinha trabalhado com essa tecnologia no ambiente acadêmico; participar da concepção de novos produtos junto ao time de desenvolvimento e também ajudar desenvolvedores junior a enfrentarem os primeiros desafios na área de desenvolvimento de software. Atualmente sigo na Globalthings ajudando a empresa a cada dia que passa a entregar um produto de qualidade para os nossos clientes."
+    ]
+  },
+  "redesSociais": [
+    {
+      "title": "Linkedin",
+      "link": "https://linkedin.com/in/diegoma",
+      "icon": "/icon/$theme/linkedin.svg"
+    },
+    {
+      "title": "GitHub",
+      "link": "https://github.com/diegoma",
+      "icon": "/icon/$theme/github.svg"
+    }
+  ],
+  "habilidades": [
+    {
+      "title": "C#"
+    },
+    {
+      "title": ".NET"
+    },
+    {
+      "title": "ASP.NET"
+    },
+    {
+      "title": "WEB API 2"
+    },    
+    {
+      "title": "MVC"
+    },
+    {
+      "title": "WEB FORMS"
+    },
+    {
+      "title": "SOAP"
+    },
+    {
+      "title": ".NET CORE"
+    },
+    {
+      "title": "ASP.NET CORE"
+    },
+    {
+      "title": "POSTGRESQL"
+    },
+    {
+      "title": "GIT"
+    },
+    {
+      "title": "HTML"
+    },
+    {
+      "title": "CSS"
+    },
+    {
+      "title": "JAVASCRIPT"
+    },
+    {
+      "title": "REACT JS"
+    },
+    {
+      "title": "SELENIUM"
+    }
+  ],
+  "educacao": {
+    "title": "Educação",
+    "cursos": [
+      {
+        "instituicao": "Unicamp",
+        "ano": "2019",
+        "titulo": "Pós-Graduação em Engenharia de Software",
+        "conteudo": "Nessa Pós-Graduação pude recordar e aprimorar meus conhecimentos na área de Engenharia de Software, passando como tópicos como: computação distribuida, IHC, gerenciamento e estimativa de projetos, arquitetura de software, componentização e ditribução de softwares, banco de dados (SQL e NoSQL)."
+      },
+      {
+        "instituicao": "Fatec-SP",
+        "ano": "2016",
+        "titulo": "Tecnólogo em Análise e Desenvolvimento de Sistemas",
+        "conteudo": "Considerado um dos melhores cursos da área no Brasil, nessa formação, que é bem completa, foram ministradas aulas com os seguintes tópicos: fundamentos da computação, programação, cálculo e estatística, engenharia de software. Além de matérias com foco no mercado de trabalho, como: Contabilidade e Economia."
+      },
+      {
+        "instituicao": "Etec-SP",
+        "ano": "2011",
+        "titulo": "Técnico em Informática",
+        "conteudo": "Nesse curso foram ministradas aulas como: Lógica de Programação, Programação Orientada a Objeto, UML, Banco de Dados (MSSQL), Programação WEB, Programação Mobile (J2ME), Manuteção de Computadores, Edição de Imagens e etc."
+      },
+      {
+        "instituicao": "Nsra. De Fátima",
+        "ano": "2008",
+        "titulo": "Técnico em Gestão Administrativa",
+        "conteudo": "Nesse curso foram ministradas aulas de: Administração de Empresas, Contabilidade, Recursos Humanos, Direito Empresarial, Psicologia, Inglês, Informática Básica, Redação Técnica e etc."
+      }
+    ],
+    "idiomas": {
+      "titulo": "Idiomas",
+      "linguas": [
+        {
+          "titulo": "Português",
+          "nivel": "Fluente"
+        },
+        {
+          "titulo": "Inglês",
+          "nivel": "Avançado"
+        }
+      ]
+    },
+    "cursosAvulsos": {
+      "titulo": "Cursos",
+      "cursos": "Web Designer (Senai), Testes de Software (Coursera), Padrões de Projeto (Coursera), Arquitetura de Software .NET (Desenvolvedor.io). Além de diversos cursos em plataformas como Alura, Pluralsights, CodeAcademy e CodeSchool."
+    }
+  },
+  "carreira": {
+    "title": "Carreira",
+    "empregos": [
+      {
+        "titulo": "Globalthings",
+        "periodo": "05/2018",
+        "cargo": "Analista Programador",
+        "conteudo": [
+          "Na Globalthings tenho o continuo desafio de trabalhar em um projeto já consolidado no mercado, com mais de dez anos de idade. E como é natural em projetos grandes e que estão no mercado a muito tempo, existiam muitas coisas que precisavam ser refatoradas e adaptadas para que fosse possível evoluir o projeto com maior rapidez e atender a demanda da criação de um aplicativo mobile que era uma grande necessidade dos nossos clientes.",
+          "Graças a incrível competência da equipe, o processo de refatoração e evolução do principal produto da empresa, assim como a criação de novos produtos, tem se mostrado um sucesso."
+        ],
+        "atividades": ["Rafatoração do funcionalidades por meio da criação de REST APIs", "Refatoração da estrutura de Back-End do projeto separando as camadas de negócios da camada de acesso de dados (Repository Pattern)", "Criação de projeto em Asp.Net MVC para uso em Totens de atendimento", "Criação bot fazendo uso da API do IBM Watson ", "Criação e manutenção de páginas em Web Forms", "Criação e manutenção de relatórios usando Active Reports", "Criação e manutenção de códigos Front-End (HTML, Javascript (ES5 e ES6), jQuery, ReactJS)", "Criação das queyrs e funções de banco de dados usado PostgreSQL"]
+      },
+      {
+        "titulo": "ITBroker",
+        "periodo": "02/2017 - 10/2017",
+        "cargo": "Analista Programador",
+        "conteudo": [
+          "Na ITBroker, eu tive o desafio de trabalhar em um projeto ambicioso, que tinha como desafio consolidar milhões de dados de empresas e apresentar os mesmos de forma consolidada aos nossos clientes.",
+          "O projeto era dividido em duas frentes, e eu fui o único desenvolvedor a trabalhar em ambas essas frentes, sendo essas frente as seguintes:",
+          "\t- A criação de web crawlers e algoritmos para captura de dados da web\n\t- A criação de um sistema web onde fosse possível analisar os dados capturados pelos web crawlers por meio de filtros e gráficos",
+          "Os web crawler são robôs que acessam páginas da web em busca de dados relevantes para algum propósito, um bom exemplo é a análise de tweets no período de eleições. Para a criação desses robôs foi usado C# + Selenium; além do uso desses robôs, fui responsável por criar processos para o consumo de APIs que também forneciam à base de dados do projeto informações interessantes para o produto.",
+          "O sistema Web foi criado usando Asp.Net MVC, onde foram usadas bibliotecas como: Identity, Entity Framework, Jquery, JqueryUI, Bootstrap e ChartJs. A camada de autorização e autenticação do Identity foi modificada para atender a alguns requisitos. Ambos os projetos usaram o banco de dados SQL Server e foram publicados na Azure."
+        ],
+        "atividades": ["Modelagem um banco de dados", "Desenvolvimento front-end usando: HTML5, CSS3, Javascript, Ajax, Bootstrap, Jquery, JqueryUI, JqueryMask, API do Google Maps, ChartsJs", "Desenvolvimento de back-end usando: C#, Asp.Net MVC, Asp.Net Web API 2, Entity Framework 6", "Integração com serviços terceiros por meio de web services usando:  WSDL/SOAP e REST APIs", "Desenvolvimento de Web Crawlers usando: C# e Selenium", "Configuração de ambientes de produçao e homologação na Azure"]
+      },
+      {
+        "titulo": "Inspira Tecnologia",
+        "periodo": "10/2012 - 10/2016",
+        "cargo": "Analista Programador Jr. | Estagiário",
+        "conteudo": [
+          "Comecei a trabalhar na Inspira como estagiário de desenvolvimento Front-End em 2012 e desde os meus primeiros dias por lá eu pude trabalhar em diversos tipos de projeto, desde sites de startups, que estavam validando seus produtos, até sistemas e sites institucionais de grandes empresas. Pude aprender bem os fundamentos do desenvolvimento Front-End e ter contato com desenvolvedores com uma larga experiência na área, o que me ajudou muito no processo de formação profissional no começo de carreira.",
+          "Com o passar do tempo, e após ser efetivado como Analista Programador Jr.,  ocorreram reformulações na empresa que fizeram com que eu passasse  a atuar mais com testes de Front-End e depois com desenvolvimento Back-End, foi então que eu tive mais contato com C#, Asp.Net, Hibernate e Entity Framework."
+        ],
+        "atividades": ["Criação de landing pages e websites para grandes empresas (HTML, CSS e Javascript)", "Criação e-mail marketing", "Desenvolver e manutenção em CMS: Wordpress e Umbraco", "Integração entre Front-End e Back-End em sites construídos em Asp.Net, Rails e Django", "Manutenção de aplicações híbridas em Cordova/Phonegap usando AngularJS", "Desenvolvimento back-end em C# e Ruby", "Criação de testes End-to-End usando Protractor", "Criação de testes BDD (C#)", "Refatoração de código internacionalização do projeto"]
+      },
+      {
+        "titulo": "D'exito Confecções",
+        "periodo": "02/2012 - 09/2012",
+        "cargo": "Web Designer Jr.",
+        "conteudo": [
+          "Na D'exito fui o responsável por criar o layout e front-end do site institucional da empresa."
+        ],
+        "atividades": ["Criação do layout do site institucional", "Desenvolvimento Front-End do site institucional", "Desenvolvimento de banners em Flash Player (swf)", "Vetorização de imagens"]
+      }
+    ]
+  },
+  "theme": {
+    "bright": {
+      "colors": {
+        "primary": "#000000",
+        "secondary": "#FFFFFF"
+      },
+      "imgPerfilFilter": "none",
+      "name": "bright"
+    },
+    "dark": {
+      "colors": {
+        "primary": "#8B949E",
+        "secondary": "#0D1117"
+      },
+      "imgPerfilFilter": "grayscale(100%) brightness(0.7);",
+      "name": "dark"
+    }
+  }
+}
