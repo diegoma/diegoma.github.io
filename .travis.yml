@@ -9,6 +9,7 @@ script:
   - npm run export 
   - touch out/.nojekyll 
   - dir
+  - pwd
 deploy:
   provider: pages 
   cleanup: true 
