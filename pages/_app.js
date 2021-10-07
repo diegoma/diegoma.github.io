@@ -6,6 +6,13 @@ import { BtnTema } from "../src/components/UI";
 import SwitcherTheme from "../src/components/SwitcherTheme";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import SiteBackground from '../src/components/SiteBackground';
+import GitHubCorner from '../src/components/GitHubCorner';
+import Menu from '../src/components/Menu';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container'
+
 const GlobalStyle = createGlobalStyle`
   html {
     overflow-x: hidden;
@@ -73,7 +80,7 @@ export default function App({ Component, pageProps }) {
   const toggleTema = () => {
     setTheme((theme) => !theme);
   };
-  
+
   return (
     <>
       <Head>
@@ -81,12 +88,26 @@ export default function App({ Component, pageProps }) {
           {db.siteTitle}
         </title>
       </Head>
-      <ThemeProvider theme={theme ? db.theme.dark : db.theme.bright }>
+      <ThemeProvider theme={theme ? db.theme.dark : db.theme.bright}>
         <GlobalStyle />
-        <BtnTema onClick={toggleTema}>
-          <SwitcherTheme theme={theme} />
-        </BtnTema>
-        <Component {...pageProps} />
+        <SiteBackground>
+          <span id="quemSouEu"></span>
+          <GitHubCorner projectUrl="https://github.com/diegoma/diegoma.github.io" />
+
+          <BtnTema onClick={toggleTema}>
+            <SwitcherTheme theme={theme} />
+          </BtnTema>
+
+          <Container fluid>
+            <Row>
+              <Col sm={{ span: 8, offset: 1 }}>
+                <Menu menuItems={db.menuItems}></Menu>
+              </Col>
+            </Row>
+          </Container>
+
+          <Component {...pageProps} />
+        </SiteBackground>
       </ThemeProvider>
     </>
   )

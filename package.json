@@ -5,16 +5,26 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "export": "next export"
+    "export": "next export",
+    "deploy": "npm run build && npm run export"
   },
   "dependencies": {
+    "@mdx-js/loader": "^1.6.22",
+    "@next/mdx": "^11.1.2",
     "bootstrap": "^5.1.1",
+    "gray-matter": "^4.0.3",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-optipng": "^8.0.0",
     "next": "latest",
+    "next-compose-plugins": "^2.2.1",
+    "next-mdx-remote": "^3.0.5",
+    "next-optimized-images": "^2.6.2",
     "react": "^17.0.1",
     "react-bootstrap": "^2.0.0-rc.0",
     "react-dom": "^17.0.1",
     "react-is": "^17.0.1",
-    "styled-components": "^5.0.0"
+    "styled-components": "^5.0.0",
+    "webp-loader": "^0.6.0"
   },
   "devDependencies": {
     "@svgr/webpack": "^5.5.0",
