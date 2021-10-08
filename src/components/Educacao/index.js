@@ -2,8 +2,6 @@ import styled from 'styled-components';
 import CaixaEducacao from "../CaixaEducacao";
 import CaixaConteudo from "../CaixaConteudo"
 import Secao from "../Secao";
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 
 const EducacaoWrapper = styled.ul`
   font-family: Arial, Helvetica, sans-serif;
