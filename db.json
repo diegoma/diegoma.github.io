@@ -3,19 +3,23 @@
   "menuItems": [
     {
       "name": "Quem sou eu?",
-      "link": "#quemSouEu"
+      "link": "/#quemSouEu"
     },
     {
       "name": "Experiência",
-      "link": "#experiencia"
+      "link": "/#experiencia"
     },
     {
       "name": "Educação",
-      "link": "#educacao"
+      "link": "/#educacao"
     },
     {
       "name": "Carreira",
-      "link": "#carreira"
+      "link": "/#carreira"
+    },
+    {
+      "name": "Blog",
+      "link": "/blog"
     }
   ],
   "quemSouEu": {

@@ -1,7 +1,4 @@
 import db from '../db.json';
-// import SiteBackground from '../src/components/SiteBackground';
-// import GitHubCorner from '../src/components/GitHubCorner';
-// import Menu from '../src/components/Menu';
 import QuemSouEu from '../src/components/QuemSouEu';
 import Experiencia from '../src/components/Experiencia';
 import Educacao from '../src/components/Educacao';

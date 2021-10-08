@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import Link from 'next/link';
 import styled from 'styled-components';
 
 const MenuWrapper = styled.nav`   
@@ -39,6 +39,7 @@ const MenuItem = styled.a`
     padding: 2px 0px;
     text-decoration: none;
     color: ${({ theme }) => theme.colors.primary};
+    cursor: pointer;
 
     &:after {
       display:block;
@@ -69,58 +70,18 @@ const MenuItem = styled.a`
     }
 `;
 
-const MenuButton = styled.div`
-  width: 30px;
-  height: 20px;
-  position: absolute;
-  cursor: pointer;
-
-  span {
-    display: block;
-    position: absolute;
-    height: 4px;
-    width: 100%;
-    background: #d3531a;
-    opacity: 1;
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-    -webkit-transition: .25s ease-in-out;
-    -moz-transition: .25s ease-in-out;
-    -o-transition: .25s ease-in-out;
-    transition: .25s ease-in-out;
-  }
-
-  span:nth-child(1) {
-    top: 0px;
-  }
-
-  span:nth-child(2) {
-    top: 8px;
-  }
-
-  span:nth-child(3) {
-    top: 16px;
-  }
-`;
-
 const Menu = function ({ menuItems }) {
-  const [isActive, setActive] = useState("false");
-
-  const handleToggle = () => {
-    setActive(!isActive);
-  };
-
   return (
     <MenuWrapper>
       <ul>
         {
           menuItems.map((result, index) => (
             <li key={`result__${index}`}>
-              <MenuItem href={result.link}>
-                {result.name}
-              </MenuItem>
+              <Link href={result.link}>
+                <MenuItem>
+                  {result.name}
+                </MenuItem>
+              </Link>
             </li>
           ))
         }
