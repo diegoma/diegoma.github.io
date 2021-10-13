@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/travis-ci/travis-web.svg?branch=master)](https://travis-ci.com/travis-ci/travis-web)
+[![Build Status](https://app.travis-ci.com/diegoma/diegoma.github.io.svg?branch=master)](https://app.travis-ci.com/diegoma/diegoma.github.io)
 
 [pt-BR]
 
