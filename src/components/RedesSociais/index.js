@@ -36,7 +36,7 @@ const RedesSociais = (props) =>
       {
         props.redesSociais.map((result, index) => (
           <li key={`${index}`}>
-            <a href={`${result.link}`} target="_blank">
+            <a href={`${result.link}`} target="_blank" rel="noopener noreferrer">
               <IconeRedeSocial iconPath={`${result.icon}`} alt={`${result.title}`} />
             </a>
           </li>
