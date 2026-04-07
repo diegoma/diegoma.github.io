@@ -1,14 +1,12 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import svgr from 'vite-plugin-svgr';
+import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
   plugins: [
-    svgr({ include: '**/*.svg' }),
-    react({
-      babel: {
-        plugins: [['babel-plugin-styled-components', { ssr: false, displayName: true }]],
-      },
-    }),
+    tailwindcss(),
+    svgr({ include: 'src/**/*.svg' }),
+    react(),
   ],
 });

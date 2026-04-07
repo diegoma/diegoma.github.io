@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -r \"key=\\\\`\" /p/diegoma.github.io/src --include=\"*.jsx\")",
+      "Bash(npm run:*)",
+      "WebFetch(domain:diegoma.github.io)",
+      "Bash(npm uninstall:*)",
+      "Bash(npm install:*)",
+      "Bash(rm src/main.jsx src/App.jsx vite.config.js)",
+      "Bash(rm src/components/Menu/index.jsx src/components/QuemSouEu/index.jsx src/components/RedesSociais/index.jsx src/components/Habilidades/index.jsx src/components/Secao/index.jsx src/components/CaixaConteudo/index.jsx src/components/CaixaEducacao/index.jsx src/components/Educacao/index.jsx src/components/Carreira/index.jsx src/components/Experiencia/index.jsx src/components/GitHubCorner/index.jsx src/components/Separador/index.jsx src/components/SwitcherTheme/index.jsx src/components/Footer/index.jsx)",
+      "Bash(rm -rf src/components/SiteBackground src/components/UI)"
+    ]
+  }
+}
