@@ -28,7 +28,7 @@ interface Props {
 }
 
 const QuemSouEu = ({ quemSouEu, redesSociais, isDark }: Props) => (
-  <div className="my-[60px]">
+  <div className="my-[20px] sm:my-[60px]">
     <div className="flex flex-col xl:flex-row">
       <div className="w-full xl:w-5/12 xl:ml-[16.67%] px-4 xl:px-0">
         <h1 className="mb-5 text-[32px]">{quemSouEu.title}</h1>
