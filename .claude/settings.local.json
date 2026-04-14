@@ -1,4 +1,7 @@
 {
+  "attribution": {
+    "commit": ""
+  },
   "permissions": {
     "allow": [
       "Bash(grep -r \"key=\\\\`\" /p/diegoma.github.io/src --include=\"*.jsx\")",
