@@ -19,6 +19,7 @@ export default function App() {
     const color = isDark ? '#0d1117' : '#ffffff';
     document.querySelector('meta[name="theme-color"]')?.setAttribute('content', color);
     document.documentElement.style.colorScheme = isDark ? 'dark' : 'light';
+    document.body.style.backgroundColor = color;
   }, [isDark]);
 
   useEffect(() => {
