@@ -10,16 +10,23 @@ import Footer from './components/Footer';
 import Separador from './components/Separador';
 
 export default function App() {
-  const [isDark, setIsDark] = useState(true);
+  const [isDark, setIsDark] = useState(() => {
+    const saved = localStorage.getItem('theme');
+    return saved !== null ? saved === 'dark' : true;
+  });
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const toggleTema = () => setIsDark((t) => !t);
+  const toggleTema = () => setIsDark((t) => {
+    const next = !t;
+    localStorage.setItem('theme', next ? 'dark' : 'light');
+    return next;
+  });
 
   useEffect(() => {
     const color = isDark ? '#0d1117' : '#ffffff';
     document.querySelector('meta[name="theme-color"]')?.setAttribute('content', color);
     document.documentElement.style.colorScheme = isDark ? 'dark' : 'light';
-    document.documentElement.style.backgroundColor = color;
+    document.body.style.backgroundColor = color;
   }, [isDark]);
 
   useEffect(() => {
