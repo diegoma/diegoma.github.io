@@ -16,6 +16,12 @@ export default function App() {
   const toggleTema = () => setIsDark((t) => !t);
 
   useEffect(() => {
+    const color = isDark ? '#0d1117' : '#ffffff';
+    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', color);
+    document.documentElement.style.colorScheme = isDark ? 'dark' : 'light';
+  }, [isDark]);
+
+  useEffect(() => {
     document.documentElement.style.overflowY = isMenuOpen ? 'hidden' : '';
     return () => { document.documentElement.style.overflowY = ''; };
   }, [isMenuOpen]);
